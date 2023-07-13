@@ -1,0 +1,33 @@
+{
+  "name": "accounting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev-server": "encore dev-server",
+    "dev": "encore dev",
+    "watch": "encore dev --watch",
+    "build": "encore production --progress",
+    "lint": "npm run lint-js && npm run lint-vue",
+    "lint-vue": "./node_modules/.bin/eslint --fix ./assets/js/components/**/*.vue",
+    "lint-js": "./node_modules/.bin/eslint --fix ./assets/js/**/*.js"
+  },
+  "author": "n1kee",
+  "license": "ISC",
+  "dependencies": {
+    "@symfony/webpack-encore": "^4.4.0",
+    "@vuepic/vue-datepicker": "^5.4.0",
+    "axios": "^1.4.0",
+    "core-js": "^3.31.1",
+    "vue": "^3.3.4",
+    "vue-loader": "^17.2.2",
+    "vuetify": "^3.3.4"
+  },
+  "devDependencies": {
+    "eslint": "^8.44.0",
+    "@vue/compiler-sfc": "^3.3.4",
+    "eslint-plugin-vue": "^9.15.1",
+    "webpack-notifier": "^1.15.0"
+  }
+}
