@@ -7,7 +7,7 @@ PHP 8+, MySQL
 
 composer install
 
-bin/console migrate
+bin/console doctrine:migrations:migrate
 
 npm install
 
